@@ -23,4 +23,12 @@ class Stack
   def empty?
     @store.empty?
   end
+
+  def clear
+    @store.clear
+  end
+
+  def display
+    puts "Bottom of Stack [" + @store.join("<-") + "] Top of Stack"
+  end
 end
