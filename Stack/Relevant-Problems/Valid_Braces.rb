@@ -76,3 +76,42 @@ def validBraces(braces)
 
   stack.empty?
 end
+
+# Preferred Solution Annotated
+
+BRACES = {
+  "(" => ")",
+  "{" => "}",
+  "[" => "]"
+}
+ 
+OPENING_BRACES = BRACES.keys
+CLOSING_BRACES = BRACES.values
+ 
+def validBraces(braces)
+  stack  = []
+ 
+  braces.chars.each do |element|
+    if OPENING_BRACES.include?(element) # We'll accept most (we'll catch a terminal opening brace toward the end) opening braces to start the comparisons/pair checking
+      stack << element # An opening brace is now at the top of the stack (ideally)
+    else # In the event of a closing brace...
+      if BRACES[stack.last] == element # ...we compare the closing brace (element) to BRACES[stack.last] which will output a value (the closer counterpart) from a key-value pair in the BRACES hash
+        stack.pop # We remove from the top of the stack if this closing brace correctly pairs
+      else # If the element is a closing brace AND it does not pair then...
+        return false #...return false. This is necessary in the case when an unopened closing brace remains validBraces("())") or validBraces("()]")
+      end
+    end
+  end
+
+  stack.empty? # If the stack is empty, then that means that everything paired successfully (everything was correctly popped and everything that wasn't supposed to enter did not enter), hence they were valid braces.
+end
+
+# Explanation via GeeksForGeeks.org
+
+# Algorithm:
+
+# 1) Declare a character stack S.
+# 2) Now traverse the expression string exp.
+#     a) If the current character is a starting bracket (‘(‘ or ‘{‘ or ‘[‘) then push it to stack.
+#     b) If the current character is a closing bracket (‘)’ or ‘}’ or ‘]’) then pop from stack and if the popped character is the matching starting bracket then fine...else the parentheses are not balanced.
+# 3) After complete traversal, if there is some starting bracket left in stack then it is “not balanced”
