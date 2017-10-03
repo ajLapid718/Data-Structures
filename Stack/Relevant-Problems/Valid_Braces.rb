@@ -30,7 +30,8 @@ end
 # Alternatively
 
 def validBraces(braces)
-  pairs = { ")" => "(",
+  pairs = {
+    ")" => "(",
     "]" => "[",
     "}" => "{"
   }
