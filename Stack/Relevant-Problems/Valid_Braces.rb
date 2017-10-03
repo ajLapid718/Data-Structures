@@ -99,12 +99,12 @@ def validBraces(braces)
         stack.pop # We remove from the top of the stack if this closing brace correctly pairs
       else # If the element is a closing brace AND it does not pair then...
         return false #...return false. This is necessary in the case when an unopened closing brace remains validBraces("())") or validBraces("()]")
-      end
+      end            # In a case where there are more opening braces on the top-half of the stack than on the bottom-half of the stack: validBraces("[]]")...this return false will be called to invalidate the input because we'll have an unopened parenthesis.
     end
   end
 
   stack.empty? # If the stack is empty, then that means that everything paired successfully (everything was correctly popped and everything that wasn't supposed to enter did not enter), hence they were valid braces.
-end
+end            # In a case where there are more opening braces on the bottom-half of the stack than on the top-half of the stack validBraces("[[[]]"), the stack.empty? call will return false (invalid parenthesis) because we'll have an unclosed parenthesis.
 
 # Explanation via GeeksForGeeks.org
 
