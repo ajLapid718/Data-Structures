@@ -47,3 +47,32 @@ def validBraces(braces)
 
   stack.empty?
 end
+
+# Preferred Solution
+
+BRACES = {
+  "(" => ")",
+  "{" => "}",
+  "[" => "]"
+}
+ 
+OPENING_BRACES = BRACES.keys
+CLOSING_BRACES = BRACES.values
+ 
+def validBraces(braces)
+  stack  = []
+ 
+  braces.chars.each do |element|
+    if OPENING_BRACES.include?(element)
+      stack << element
+    else
+      if BRACES[stack.last] == element
+        stack.pop 
+      else
+        return false
+      end
+    end
+  end
+
+  stack.empty?
+end
