@@ -20,11 +20,11 @@ def validBraces(braces)
   stack = []
 
   braces.chars.each do |brace|
-    stack << brace if BRACES.key?(brace) # Push all opening braces
+    stack << brace if BRACES.has_key?(brace) # Push all opening braces
     return false if BRACES.key(brace) && BRACES.key(brace) != stack.pop # If we have a closing brace at the very beginning, an opening brace at the very end, or if there are no matches for this brace, then return false
   end                                                                   # The pop action is going to be constantly called. If the stack is empty by the end, then everything paired up, and that validates the braces.
 
-  stack.empty?
+  stack.empty? # The only time the input is valid is if this returns true. If there are stragglers, then this will catch that.
 end
 
 # Alternatively
@@ -55,19 +55,19 @@ BRACES = {
   "{" => "}",
   "[" => "]"
 }
- 
+
 OPENING_BRACES = BRACES.keys
 CLOSING_BRACES = BRACES.values
- 
+
 def validBraces(braces)
   stack  = []
- 
+
   braces.chars.each do |element|
     if OPENING_BRACES.include?(element)
       stack << element
     else
       if BRACES[stack.last] == element
-        stack.pop 
+        stack.pop
       else
         return false
       end
@@ -84,13 +84,13 @@ BRACES = {
   "{" => "}",
   "[" => "]"
 }
- 
+
 OPENING_BRACES = BRACES.keys
 CLOSING_BRACES = BRACES.values
- 
+
 def validBraces(braces)
   stack  = []
- 
+
   braces.chars.each do |element|
     if OPENING_BRACES.include?(element) # We'll accept most (we'll catch a terminal opening brace toward the end) opening braces to start the comparisons/pair checking
       stack << element # An opening brace is now at the top of the stack (ideally)
