@@ -20,9 +20,9 @@ def validBraces(braces)
   stack = []
 
   braces.chars.each do |brace|
-    stack << brace if BRACES.key?(brace)
-    return false if BRACES.key(brace) && BRACES.key(brace) != stack.pop
-  end
+    stack << brace if BRACES.key?(brace) # Push all opening braces
+    return false if BRACES.key(brace) && BRACES.key(brace) != stack.pop # If we have a closing brace at the very beginning, an opening brace at the very end, or if there are no matches for this brace, then return false
+  end                                                                   # The pop action is going to be constantly called. If the stack is empty by the end, then everything paired up, and that validates the braces.
 
   stack.empty?
 end
