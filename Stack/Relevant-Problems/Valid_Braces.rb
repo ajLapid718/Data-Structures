@@ -57,7 +57,6 @@ BRACES = {
 }
 
 OPENING_BRACES = BRACES.keys
-CLOSING_BRACES = BRACES.values
 
 def validBraces(braces)
   stack  = []
@@ -86,7 +85,6 @@ BRACES = {
 }
 
 OPENING_BRACES = BRACES.keys
-CLOSING_BRACES = BRACES.values
 
 def validBraces(braces)
   stack  = []
