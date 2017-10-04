@@ -1,4 +1,4 @@
-# Understanding Stacks and Recursion
+# Understanding Stacks and Recursion via http://www.informit.com/articles/article.aspx?p=26943&seqNum=4
 
 # As an example of the isomorphism between stack-oriented algorithms and recursive algorithms, we will take a look at the classic "Tower of Hanoi" problem.
 
