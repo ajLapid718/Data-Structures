@@ -11,13 +11,17 @@ class Stack
     @data.pop
   end
 
+  def peek
+    @data.last
+  end
+
   def empty?
     @data.empty?
   end
 
   def display
     puts "top"
-    puts @data
+    puts @data.reverse
     puts "bottom"
   end
 end
@@ -40,6 +44,10 @@ class Stack
     @data.delete_at(@head)
     @head -= 1
     result
+  end
+
+  def peek
+    @data[@head]
   end
 
   def empty?
