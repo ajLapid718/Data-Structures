@@ -23,7 +23,7 @@ function print(head) {
     }
 }
 
-// In Ruby (HackerRank does not accept Ruby for this challenge)
+// In Ruby (HackerRank does not, at the moment, accept solutions written in Ruby for this challenge)
 
 // def print_list(head)
 //   while head != nil
