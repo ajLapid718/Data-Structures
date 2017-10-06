@@ -27,7 +27,7 @@ function print(head) {
 
 // def print_list(head)
 //   while head != nil
-//     print head.data
+//     puts head.data
 //     head = head.next
 //   end
 // end
