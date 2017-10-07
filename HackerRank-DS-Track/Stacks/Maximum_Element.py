@@ -44,8 +44,8 @@ max_stack = []
 arr.each_with_index do |num, idx|
     next if idx == 0
     case num
-   	when 1
-    	stack << arr[idx+1]
+    when 1
+        stack << arr[idx+1]
     when 2
         stack.pop
     when 3
