@@ -42,7 +42,7 @@ stack = []
 max_stack = []
 
 arr.each_with_index do |num, idx|
-	next if idx == 0
+    next if idx == 0
     case num
    	when 1
     	stack << arr[idx+1]
