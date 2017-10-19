@@ -15,7 +15,7 @@ def simpleArraySum(n, ar)
   sum = 0
 
   n.times do |idx|
-      sum += ar[idx]
+    sum += ar[idx]
   end
 
   sum
