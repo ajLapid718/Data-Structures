@@ -11,7 +11,6 @@ Sample Output
 19:05:45
 
 # My solution
-
 def timeConversion(s)
   am_or_pm = s.chars.last(2).join
   s.delete!(am_or_pm)
