@@ -11,7 +11,7 @@ Code that prints the sum calculated and returned by solveMeFirst is provided for
 
 # My solution
 def solveMeFirst(a, b)
-    a + b
+  a + b
 end
 
 # Provided by HackerRank
