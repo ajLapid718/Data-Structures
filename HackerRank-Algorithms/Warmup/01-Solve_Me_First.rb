@@ -10,7 +10,7 @@ Output Format
 Code that prints the sum calculated and returned by solveMeFirst is provided for you in the editor.
 
 # My solution
-def solveMeFirst (a, b)
+def solveMeFirst(a, b)
     a + b
 end
 
