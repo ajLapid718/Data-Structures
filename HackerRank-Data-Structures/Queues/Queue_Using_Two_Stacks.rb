@@ -25,6 +25,7 @@ Sample Output
 14
 14
 
+# My solution using a queue
 amount_of_queries = gets.to_i
 input = []
 
@@ -42,5 +43,36 @@ input.each do |query|
     queue.pop
   when 3
     puts queue.last
+  end
+end
+
+# My solution using two stacks
+amount_of_queries = gets.to_i
+input = []
+
+amount_of_queries.times do
+  input << gets.split(" ").map(&:to_i)
+end
+
+stack = []
+other_stack = []
+
+input.each do |query|
+  case query.first
+  when 1
+    stack.push(query.last)
+  when 2
+    if other_stack.empty?
+      until stack.empty?
+        other_stack.push(stack.pop)
+      end
+    end
+    other_stack.pop
+  when 3
+    if other_stack.empty?
+      puts stack.first
+    else
+      puts other_stack.last
+    end
   end
 end
