@@ -15,7 +15,7 @@ def bubble_sort(arr)
   arr
 end
 
-# For better potentially better readability
+# For potentially better readability
 def bubble_sort(arr)
   loop do
     sorted = true
