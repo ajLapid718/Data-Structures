@@ -14,3 +14,21 @@ def bubble_sort(arr)
 
   arr
 end
+
+# For better potentially better readability
+def bubble_sort(arr)
+  loop do
+    sorted = true
+
+    arr[0...-1].each_index do |i|
+      if arr[i] > arr[i+1]
+        sorted = false
+        arr[i], arr[i+1] = arr[i+1], arr[i]
+      end
+    end
+
+    break if sorted == true
+  end
+
+  arr
+end
