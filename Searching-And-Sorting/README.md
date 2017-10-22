@@ -1,11 +1,30 @@
 <table>
-  <tr>
-    <td>Algorithm</td>
-    <td>Time Complexity</td>
-    <tr>Hey</tr>
-    <td>Space Complexity</td>
-  </tr>
-  <tr>
-    <td colspan="3">Three</td>
-  </tr>
+	<tbody>
+		<tr>
+			<td> Algorithm </td>
+			<td colspan="3"> Time Complexity </td>
+			<td> Space Complexity </td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
 </table>
