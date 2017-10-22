@@ -6,7 +6,7 @@
 			<td>Space Complexity</td>
 		</tr>
 		<tr>
-			<td>Foo</td>
+			<td>------------------------------------------------</td>
 			<td>Worst</td>
 			<td>Average</td>
 			<td>Best</td>
