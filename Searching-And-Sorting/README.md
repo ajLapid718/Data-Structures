@@ -6,11 +6,11 @@
 			<td> Space Complexity </td>
 		</tr>
 		<tr>
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
+			<td></td>
+			<td>Worst</td>
+			<td>Average</td>
+			<td>Best</td>
+			<td></td>
 		</tr>
 	</tbody>
 </table>
