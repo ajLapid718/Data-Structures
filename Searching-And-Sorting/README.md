@@ -26,5 +26,12 @@
       <td>O(n log(n))</td>
       <td>O(log(n))</td>
     </tr>
+    <tr>
+      <td>Merge Sort</td>
+      <td>O(n log(n))</td>
+      <td>O(n log(n))</td>
+      <td>O(n log(n))</td>
+      <td>O(n)</td>
+    </tr>
 	</tbody>
 </table>
