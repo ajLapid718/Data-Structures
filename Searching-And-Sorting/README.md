@@ -1,16 +1,11 @@
-| Algorithm       | Time Complexity        | Space Complexity  |
-| :-------------: |:-------------:|
-| Bubble Sort     | right-aligned |
-| Quick Sort      | centered      |
-| Merge Sort      | are neat      |
-
 <table>
   <tr>
     <td>Algorithm</td>
     <td>Time Complexity</td>
+    <tr>Hey</tr>
     <td>Space Complexity</td>
   </tr>
   <tr>
-    <td colspan="2">Three</td>
+    <td colspan="3">Three</td>
   </tr>
 </table>
