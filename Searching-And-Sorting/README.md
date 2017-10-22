@@ -16,28 +16,28 @@
       <td>Bubble Sort</td>
       <td>O(n^2)</td>
       <td>O(n^2)</td>
-      <td>O(n)</td>
+      <td>Ω(n)</td>
       <td>O(1)</td>
     </tr>
     <tr>
       <td>Quick Sort</td>
       <td>O(n^2)</td>
       <td>O(n log(n))</td>
-      <td>O(n log(n))</td>
+      <td>Ω(n log(n))</td>
       <td>O(log(n))</td>
     </tr>
     <tr>
       <td>Merge Sort</td>
       <td>O(n log(n))</td>
       <td>O(n log(n))</td>
-      <td>O(n log(n))</td>
+      <td>Ω(n log(n))</td>
       <td>O(n)</td>
     </tr>
     <tr>
       <td>Binary Search</td>
       <td>O(log(n))</td>
       <td>O(log(n))</td>
-      <td>O(1)</td>
+      <td>Ω(1)</td>
       <td>O(1)</td>
     </tr>
 	</tbody>
