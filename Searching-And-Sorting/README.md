@@ -6,8 +6,9 @@
 
 <table>
   <tr>
-    <td>One</td>
-    <td>Two</td>
+    <td>Algorithm</td>
+    <td>Time Complexity</td>
+    <td>Space Complexity</td>
   </tr>
   <tr>
     <td colspan="2">Three</td>
