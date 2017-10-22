@@ -26,11 +26,11 @@ Keep in mind that one of the constraints of binary search is that the array must
 Two analogies to keep in mind: searching for a particular person in a phonebook or searching for a word in a dictionary.
 
 The lower_bound starts off as the value of the first index, which is 0 since arrays are zero-indexed.
-The upper_bound starts off as the value of the last index, which is, as usual, the the length of the array subtracted by one.
+The upper_bound starts off as the value of the last index, which is, as usual, the length of the array subtracted by one.
 
 A while loop will be the flavor of looping used in this case.
 The lower_bound will never be greater than the upper_bound nor will the upper_bound ever be less than the lower_bound...unless the array does not contain the element.
-If the lower_bound becomes equal to the upper_bound, then the target is either about to be be found or the whole array has been searched through...finding nothing; so the loop will break.
+If the lower_bound becomes equal to the upper_bound, then the target is either about to be be found or the whole array has been searched through...finding nothing; so the loop will break soon thereafter.
 That is, if you have two possible pages left to go in the search, if page 1 does not have the target, then page 2 will either have it or it won't and the lower bound for that final search will be equivalent to the upper bound.
 Whether page 2 has the target_element or not will determine if nil or the target index is returned.
 After the loop ends, the return nil call at the tail-end is in place to relay that the array did not contain the target element.
@@ -65,7 +65,7 @@ Stepping through this binary search might also look like:
 - [1,2,3,4,5,6,10,12], target = 5
 # On the first run through: lower_bound = 0, upper_bound = 7, midpoint = 3, potential_match = 4; potential_match < 5; next_lower_bound = 4
 # On the second run through: lower_bound = 4, upper_bound = 7, midpoint = 5, potential_match = 6; potential_match > 5; next_upper_bound = 4
-# On the following run through: lower_bound = 4, upper_bound = 4, midpoint = 4, potential_match aka arr[4] == 5
+# On the following run through: lower_bound = 4, upper_bound = 4, midpoint = 4, potential_match aka arr[4] == 5. Hooray!
 
 Stepping through this binary search might also look like:
 - [1,2,3,4,5,6,10,12], target = 16
