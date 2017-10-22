@@ -10,7 +10,7 @@
 			<td>Worst</td>
 			<td>Average</td>
 			<td>Best</td>
-			<td>Foooooooooooooooooooo</td>
+			<td>------------------------------------------------</td>
 		</tr>
     <tr>
       <td>Bubble Sort</td>
