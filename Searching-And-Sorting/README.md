@@ -2,7 +2,7 @@
 	<tbody>
 		<tr>
 			<td> Algorithm </td>
-			<td colspan="3"> Time Complexity </td>
+			<td colspan="3" style="text-align:center;"> Time Complexity </td>
 			<td> Space Complexity </td>
 		</tr>
 		<tr>
