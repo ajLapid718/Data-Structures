@@ -33,5 +33,12 @@
       <td>O(n log(n))</td>
       <td>O(n)</td>
     </tr>
+    <tr>
+      <td>Binary Search</td>
+      <td>O(log(n))</td>
+      <td>O(log(n))</td>
+      <td>O(1)</td>
+      <td>O(1)</td>
+    </tr>
 	</tbody>
 </table>
