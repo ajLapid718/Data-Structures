@@ -40,5 +40,12 @@
       <td>Ω(1)</td>
       <td>O(1)</td>
     </tr>
+    <tr>
+      <td>Counting Sort</td>
+      <td>O(n+k)</td>
+      <td>O(n+k)</td>
+      <td>Ω(n+k)</td>
+      <td>O(k)</td>
+    </tr>
 	</tbody>
 </table>
