@@ -20,8 +20,7 @@ function merge(left, right) {
     if (left[leftIdx] < right[rightIdx]) {
       sorted.push(left[leftIdx]);
       leftIdx += 1;
-    }
-    else {
+    } else {
       sorted.push(right[rightIdx]);
       rightIdx += 1;
     }
