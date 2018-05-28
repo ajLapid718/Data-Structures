@@ -47,5 +47,12 @@
       <td>Ω(n+k)</td>
       <td>O(k)</td>
     </tr>
+		<tr>
+			<td>Bucket Sort</td>
+			<td>O(n^2)</td>
+			<td>Θ(n+k)</td>
+			<td>Ω(n+k)</td>
+			<td>O(n)</td>
+		</tr>
 	</tbody>
 </table>
