@@ -54,5 +54,12 @@
 			<td>Ω(n+k)</td>
 			<td>O(n)</td>
 		</tr>
+		<tr>
+			<td>Selection Sort</td>
+			<td>O(n^2)</td>
+			<td>Θ(n^2)</td>
+			<td>Ω(n^2)</td>
+			<td>O(1)</td>
+		</tr>
 	</tbody>
 </table>
