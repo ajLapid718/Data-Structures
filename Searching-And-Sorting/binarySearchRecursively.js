@@ -22,6 +22,8 @@ function binarySearch(arr, target) {
 }
 
 // Modified binary search;
+// If the target value is contained by the input array, return true;
+// Otherwise, return false;
 
 function modifiedBinarySearch(arr, target) {
   let midPoint = Math.floor(arr.length/2);
@@ -30,11 +32,11 @@ function modifiedBinarySearch(arr, target) {
   let tail = arr[arr.length-1];
 
   if (currentValue === target || head === target || tail === target) {
-    return midPoint;
+    return true;
   }
 
   if (target < head || target > tail) {
-    return -1;
+    return false;
   }
 
   if (currentValue > target) {
@@ -44,4 +46,6 @@ function modifiedBinarySearch(arr, target) {
   if (currentValue < target) {
     return modifiedBinarySearch(arr.slice(midPoint + 1), target);
   }
+
+  return false;
 }
