@@ -63,9 +63,9 @@
 		</tr>
 		<tr>
 			<td>Insertion Sort</td>
-			<td>O(n)</td>
+			<td>O(n^2)</td>
 			<td>Θ(n^2)</td>
-			<td>Ω(n^2)</td>
+			<td>Ω(n)</td>
 			<td>O(1)</td>
 		</tr>
 	</tbody>
