@@ -61,5 +61,12 @@
 			<td>Ω(n^2)</td>
 			<td>O(1)</td>
 		</tr>
+		<tr>
+			<td>Insertion Sort</td>
+			<td>O(n)</td>
+			<td>Θ(n^2)</td>
+			<td>Ω(n^2)</td>
+			<td>O(1)</td>
+		</tr>
 	</tbody>
 </table>
